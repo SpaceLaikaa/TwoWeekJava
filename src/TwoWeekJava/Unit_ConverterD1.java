@@ -1,6 +1,6 @@
 package TwoWeekJava;
 
-public class Unit_Converter {
+public class Unit_ConverterD1 {
     public static double Converter(float n, float m){
        return n;
     }
