@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/src/Base/TwoWeekJava.iml" filepath="$PROJECT_DIR$/src/Base/TwoWeekJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Main/Base/TwoWeekJava.iml" filepath="$PROJECT_DIR$/Main/Base/TwoWeekJava.iml" />
     </modules>
   </component>
 </project>
