@@ -1,0 +1,19 @@
+🪶 TwoWeekJava
+
+This repository contains a collection of small Java projects created over 14 days.  
+Each day, I build a new project to improve my programming logic, problem-solving skills, and Java fundamentals.
+
+🎯 Goal
+To write **one Java project every day for two weeks**, covering topics like:
+- Variables and Data Types  
+- Loops and Conditionals  
+- Functions and Classes  
+- OOP Concepts  
+- File Handling and Exceptions  
+- Simple real-world applications
+
+📂 Projects
+| Day | Project Name | Description |
+|-----|---------------|-------------|
+| 1 | Unit_ConverterD1 | Converts Celsius → Fahrenheit, Mile → Kilometer, Inch → Centimeter |
+| 2 | _Coming soon..._ | ... |
