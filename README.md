@@ -16,4 +16,5 @@ To write **one Java project every day for two weeks**, covering topics like:
 | Day | Project Name | Description |
 |-----|---------------|-------------|
 | 1 | Unit_ConverterD1 | Converts Celsius → Fahrenheit, Mile → Kilometer, Inch → Centimeter |
-| 2 | _Coming soon..._ | ... |
+| 2 | Password_GeneratorD2 | Generates a random secure password using uppercase, lowercase, digits, and symbols |
+| 3 | _Coming soon..._ | ... |
