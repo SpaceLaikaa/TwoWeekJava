@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Password_GeneratorD2 {
 
-
     public static void main(String[] args) {
         int A = 0;
         SecureRandom random = new SecureRandom();
