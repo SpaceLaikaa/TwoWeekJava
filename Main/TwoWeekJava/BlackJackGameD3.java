@@ -22,25 +22,31 @@ public class BlackJackGameD3{
 
         int user1 = drawCard(r);
         int user2 = 0;
+        int user3 = drawCard(r);    
 
         System.out.println("Croupier: " + dealer1 + " + " + dealer2);
         System.out.println("-----------------");
-        System.out.println("User: " + user1);
+        System.out.println("User: " + user1 + " + " + user3);
         System.out.print("Hit or Stand: ");
         String choice = sc.nextLine();
 
         if (choice.equalsIgnoreCase("hit")) {
             user2 = drawCard(r);
             int userTotal = total(user1, user2);
-            System.out.println("User: " + user1 + " + " + user2 + " = " + userTotal);
+            System.out.println("User: " + user1 + " + " + user3 + " + " + user2 );
 
-            if (userTotal > 21) {
-                System.out.println("You lost :) !");
-            } else if (userTotal == 21) {
-                System.out.println("Blackjack... You win >:( ");
-            } else {
-                System.out.println("You stand with " + userTotal);
+            for(int i=0;i<10;i++){
+                if (userTotal > 21) {
+                    System.out.println("You lost :) !");
+                    break;
+                } else if (userTotal == 21) {
+                    System.out.println("Blackjack... You win >:( ");
+                    break;
+                } else {
+                    System.out.println("You stand with " + userTotal);
+                }
             }
+
 
         }
         else if (choice.equalsIgnoreCase("stand")) {
