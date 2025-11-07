@@ -35,11 +35,18 @@ public class SkyStatsD4 {
         for (int i = 0;i<1000000;i++){
             int index = r.nextInt(100);
             String weather = pool[index];
-            if (weather.equals("Sunny")) sunnyCnt++;
-            else if(weather.equals("Cloudy")) cloudyCnt++;
-            else if(weather.equals("Rainy")) rainyCnt++;
-            else  stormyCnt++;
-
+            if (weather.equals("Sunny")) {
+                sunnyCnt++;
+            }
+            else if(weather.equals("Cloudy")) {
+                cloudyCnt++;
+            }
+            else if(weather.equals("Rainy")) {
+                rainyCnt++;
+        }
+            else {
+                stormyCnt++;
+            }
         }
         System.out.printf("Sunny: %f (%.2f%%)\n", sunnyCnt, sunnyCnt / 1000000 * 100);
         System.out.printf("Cloudy: %f (%.2f%%)\n", cloudyCnt, cloudyCnt / 1000000 * 100);
