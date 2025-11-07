@@ -17,5 +17,6 @@ To write **one Java project every day for two weeks**, covering topics like:
 |-----|---------------|-------------|
 | 1 | Unit_ConverterD1 | Converts Celsius → Fahrenheit, Mile → Kilometer, Inch → Centimeter |
 | 2 | Password_GeneratorD2 | Generates a random secure password using uppercase, lowercase, digits, and symbols |
-| 3 | **BlackJackGameD3** | A simple console-based Blackjack game where you can hit or stand against the dealer |
-| 4 | *Coming Soon...* | Next daily Java project in progress... |
+| 3 | BlackJackGameD3 | A simple console-based Blackjack game where you can hit or stand against the dealer |
+| 4 | WeatherSimD4  | Simulates 1M days of weather using probability-based random selection  |
+| 5 | *Coming Soon...* | Next daily Java project in progress... |
