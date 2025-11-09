@@ -3,7 +3,7 @@ package TwoWeekJava;
 import java.util.Random;
 import java.util.Scanner;
 
-public class BlackJackGameD3{
+public class BlackJack_GameD3 {
 
     public static int drawCard(Random r) {
         return r.nextInt(1, 11);

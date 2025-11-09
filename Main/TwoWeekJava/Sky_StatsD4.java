@@ -5,7 +5,7 @@ package TwoWeekJava;
 
 import java.util.Random;
 
-public class SkyStatsD4 {
+public class Sky_StatsD4 {
     public static String[] weatherPool(){
         int i = 0;
         String[] pool = new String[100];
