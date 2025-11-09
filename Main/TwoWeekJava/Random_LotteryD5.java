@@ -48,9 +48,24 @@ public class Random_LotteryD5 {
                 break;
             }
         }
+        int matchCount = 0;
+
+        for (i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                if (userGuesses[i] == lotteryNumbers[j]) {
+                    matchCount++;
+                    break;
+                }
+            }
+        }
+
         if(valid){
             System.out.println(Arrays.toString(lotteryNumbers)); // For checking
             System.out.println(Arrays.toString(userGuesses)); // For checking
+            System.out.print("You guessed " + matchCount + " numbers correctly! ");
+            if(matchCount >= 3){
+                System.out.println("You won the small prize!!");
+            }
 }
 }
 }
