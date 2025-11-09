@@ -7,10 +7,12 @@ import java.util.Scanner;
 
 
 public class Random_LotteryD5 {
+
     public static void main(String[] args) {
         Random r = new Random(System.currentTimeMillis());
         Scanner sc = new Scanner(System.in);
 
+        boolean valid = true;// For to check if the numbers are valid at the end.
         int i = 0;
         int[] lotteryNumbers = new int[6];
         int[] userGuesses = new int[6];
@@ -28,8 +30,27 @@ public class Random_LotteryD5 {
             }
         }
 
+        for (i = 0; i < 6; i++) {
+            System.out.print("Guess " + (i + 1) + ": ");
+            int Guesses = sc.nextInt();
+            userGuesses[i] = Guesses;
+            boolean exists = false;
 
-
-        System.out.println(Arrays.toString(lotteryNumbers)); // For checking
-    }
+            for(int k = 0;k<i;k++){
+                if (userGuesses[i] == userGuesses[k]){
+                    System.out.println("Please enter uniqe guesses.");
+                    exists = true;
+                    break;
+                }
+            }
+            if (exists){
+                valid = false;
+                break;
+            }
+        }
+        if(valid){
+            System.out.println(Arrays.toString(lotteryNumbers)); // For checking
+            System.out.println(Arrays.toString(userGuesses)); // For checking
+}
+}
 }
