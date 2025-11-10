@@ -60,7 +60,9 @@ public class Random_LotteryD5 {
         }
 
         if(valid){
+            System.out.print("Lottery Numbers are: ");
             System.out.println(Arrays.toString(lotteryNumbers)); // For checking
+            System.out.print("Your numbers were: ");
             System.out.println(Arrays.toString(userGuesses)); // For checking
             System.out.print("You guessed " + matchCount + " numbers correctly! ");
             if(matchCount >= 3){
