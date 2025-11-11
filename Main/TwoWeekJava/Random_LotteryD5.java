@@ -42,6 +42,7 @@ public class Random_LotteryD5 {
                     exists = true;
                     break;
                 }
+
             }
             if (exists){
                 valid = false;

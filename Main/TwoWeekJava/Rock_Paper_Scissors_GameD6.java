@@ -13,7 +13,6 @@ public class Rock_Paper_Scissors_GameD6 {
 
         String[] bot = {"Rock", "Paper", "Scissors"};
 
-
         System.out.println("Welcome to the RPS Game. Please enter your choice: ");
         String UserInput = sc.nextLine();
         if     (UserInput.equalsIgnoreCase("Rock") && bot[i].equals("Rock") ||
@@ -37,7 +36,6 @@ public class Rock_Paper_Scissors_GameD6 {
             System.out.println("User: " + UserInput);
             System.out.println("You lost.");
             }
-
 
     }
 }
