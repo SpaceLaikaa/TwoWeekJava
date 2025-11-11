@@ -26,7 +26,10 @@ public class Input_Stats_CounterD7{
                 zeros++;
             }
         }
-        System.out.println("There were " + positivenums + " positive, " + negativenums + " negative and, " + zeros + " zero numbers.");
 
+        int max = pool[0];
+        int min = pool[0];
+        System.out.println("There were " + positivenums + " positive, " + negativenums + " negative and, " + zeros + " zero numbers.");
+        System.out.println("Max value is: " + max + " Min value is: " + min);
     }
 }
