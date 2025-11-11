@@ -4,13 +4,14 @@ This repository contains a collection of small Java projects created over 14 day
 Each day, I build a new project to improve my programming logic, problem-solving skills, and Java fundamentals.
 
 🎯 Goal
-To write **one Java project every day for two weeks**, covering topics like:
+To write one Java project every day for two weeks, covering topics like:
 - Variables and Data Types  
 - Loops and Conditionals  
 - Functions and Classes  
 - OOP Concepts  
 - File Handling and Exceptions  
 - Simple real-world applications
+- Arrays (working with collections of data)
 
 📂 Projects
 | Day | Project Name | Description |
