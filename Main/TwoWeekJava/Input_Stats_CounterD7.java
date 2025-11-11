@@ -29,7 +29,16 @@ public class Input_Stats_CounterD7{
 
         int max = pool[0];
         int min = pool[0];
-        System.out.println("There were " + positivenums + " positive, " + negativenums + " negative and, " + zeros + " zero numbers.");
+
+        for (i = 1; i < pool.length; i++) {
+            if (pool[i] > max) {
+                max = pool[i];
+            }
+            if (pool[i] < min) {
+                min = pool[i];
+            }
+        }
+        System.out.println("There were " + positivenums + " positive, " + negativenums + " negative and, " + zeros + " number of zeros.");
         System.out.println("Max value is: " + max + " Min value is: " + min);
     }
 }
