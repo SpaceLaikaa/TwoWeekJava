@@ -24,7 +24,7 @@ public class Recursive_Guessing_GameD8 {
         }
         else {
             System.out.println("You Correctly Guessed The number: " + randomNumber);
-            System.out.println(guessCount + "Attempt was left.");
+            System.out.println(guessCount + " Attempt was left.");
         }
 
         return guess;
