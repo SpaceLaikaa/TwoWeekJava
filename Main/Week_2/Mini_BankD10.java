@@ -11,7 +11,6 @@ public class Mini_BankD10 {
         float withdraw = 0;
 
 
-
         System.out.println("Welcome to Bank Asia, please write down your Bank Account Name: ");
         String accountName = sc.nextLine();
         System.out.println("Welcome back " + accountName + " now please write your balance: ");
@@ -41,7 +40,7 @@ public class Mini_BankD10 {
                             break;
                         }
                         else if(DepositAnswer.equalsIgnoreCase("no")){
-                            System.out.println("Have a nice day..!");
+                            System.out.println("Thank you for using Bank Asia, Have a nice day..!");
                             check = false;
                             break;
                         }
@@ -80,6 +79,18 @@ public class Mini_BankD10 {
                                     }
                             }
                         }
+                    }
+                    case 3:{//Balance check
+                        System.out.println("You have " + balance + " dollars.");
+                        break;
+                    }
+                    case 4:{// Exit
+                        System.out.println("Thank you for using Bank Asia, Have a nice day..!");
+                        check = false;
+                        break;
+                    }
+                    default:{
+                        break;
                     }
                 }
             }
