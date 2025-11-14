@@ -24,5 +24,6 @@ To write one Java project every day for two weeks, covering topics like:
 | Day 6 | Rock_Paper_Scissors_GameD6 | Console-based Rock Paper Scissors game where the user plays against the CPU                                           |
 | Day 7 | Input_Stats_CounterD7      | Takes 10 integer inputs, counts positives, negatives, zeros, and identifies min & max values                          |
 | Day 8 | Recursive_Guessing_GameD8  | A number guessing game implemented using recursion instead of loops — guess the number within limited attempts        |
-| Day 9 | Coming Soon...             |                                                                                                                       |
+| Day 9 | Array_RotatorD9 | Generates a random integer array of length 10–20, rotates all elements to the right by one, and displays both original and rotated arrays |
+| Day 10| Coming Soon...             |                                                                                                                       |
 
