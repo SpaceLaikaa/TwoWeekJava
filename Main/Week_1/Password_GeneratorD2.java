@@ -1,4 +1,4 @@
-package TwoWeekJava;
+package Week_1;
 
 import java.security.SecureRandom;
 import java.util.Scanner;

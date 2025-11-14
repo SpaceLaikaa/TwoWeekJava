@@ -1,6 +1,5 @@
-package TwoWeekJava;
+package Week_1;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -18,7 +17,7 @@ public class Random_LotteryD5 {
         int[] userGuesses = new int[6];
 
         for(;i<6;i++){
-            lotteryNumbers[i] = r.nextInt(1,50);
+            lotteryNumbers[i] = r.nextInt(1,21);
             boolean alreadyExists = false;
             for (int j = 0; j < i; j++) {
                 if (lotteryNumbers[j] == lotteryNumbers[i]) {
@@ -68,6 +67,9 @@ public class Random_LotteryD5 {
             System.out.print("You guessed " + matchCount + " numbers correctly! ");
             if(matchCount >= 3){
                 System.out.println("You won the small prize!!");
+            }
+            else if(matchCount >=6){
+                System.out.println("No way... Idk what to say.");
             }
 }
 }

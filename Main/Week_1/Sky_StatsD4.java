@@ -1,7 +1,7 @@
 //Actually this is my school lab project but I really some good amount of effort and time to it ,so I
 //Wanted to post this for today's task.
 
-package TwoWeekJava;
+package Week_1;
 
 import java.util.Random;
 
