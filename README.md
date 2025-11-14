@@ -25,5 +25,6 @@ To write one Java project every day for two weeks, covering topics like:
 | Day 7 | Input_Stats_CounterD7      | Takes 10 integer inputs, counts positives, negatives, zeros, and identifies min & max values                          |
 | Day 8 | Recursive_Guessing_GameD8  | A number guessing game implemented using recursion instead of loops — guess the number within limited attempts        |
 | Day 9 | Array_RotatorD9 | Generates a random integer array of length 10–20, rotates all elements to the right by one, and displays both original and rotated arrays |
-| Day 10| Coming Soon...             |                                                                                                                       |
+| Day 10 | Mini Bank App | Built a simple banking system with deposit, withdraw, balance check and exit options using loops, Scanner and switch-case. |
+| Day 11| Coming Soon...             |                                                                                                                       |
 
