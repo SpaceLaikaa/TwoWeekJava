@@ -26,6 +26,6 @@ To write one Java project every day for two weeks, covering topics like:
 | Day 8 | Recursive_Guessing_GameD8  | A number guessing game implemented using recursion instead of loops — guess the number within limited attempts        |
 | Day 9 | Array_RotatorD9 | Generates a random integer array of length 10–20, rotates all elements to the right by one, and displays both original and rotated arrays |
 | Day 10 | Mini_Bank_AppD10 | Built a simple banking system with deposit, withdraw, balance check and exit options using loops, Scanner and switch-case. |
-| Day 11 | Mind_TestD11 | A 10-question personality analyzer that scores risky vs. stable decision-making patterns |
-| Day 12| Coming Soon...             |                                                                                                                      |
+| Day 11 | Mind_TestD11 | A 10-question personality analyzer that scores risky vs. stable decision-making patterns                                          |// I think my project are starting to get
+| Day 12| Coming Soon...             |                                                                                                                      | // a little bit similar. I hope not...
 
