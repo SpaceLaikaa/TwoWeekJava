@@ -12,6 +12,8 @@ public class Maze_BoundD12  {
         int playerCol=1;
         int monsterRow=1;
         int monsterCol=11;
+        char monsterOld=' ';
+
 
         int rightCount = 0;
         int leftCount = 0;
@@ -21,6 +23,7 @@ public class Maze_BoundD12  {
         int moveCount = 0;
 
         boolean live = true;
+        boolean lost = false;
 
         char[][] map = {
                 {'#','#','#','#','#','#','#','#','#','#','#','#','#'},
@@ -28,11 +31,18 @@ public class Maze_BoundD12  {
                 {'#',' ','#','#','#',' ','#',' ','#',' ','#',' ','#'},
                 {'#',' ','#',' ',' ',' ','#',' ',' ',' ','#',' ','#'},
                 {'#',' ','#',' ','#','#','#',' ','#','#','#',' ','#'},
-                {'#',' ','#',' ',' ',' ','#',' ','#',' ',' ',' ','#'},
+                {'#',' ',' ',' ',' ',' ','#',' ','#',' ',' ',' ','#'},
                 {'#',' ','#','#','#',' ',' ',' ','#',' ','#','G','#'},
+                {'#',' ',' ',' ',' ',' ','#',' ',' ',' ',' ',' ','#'},
                 {'#','#','#','#','#','#','#','#','#','#','#','#','#'}
         };
         while(live){
+            if(map[playerRow][playerCol]== map[monsterRow][monsterCol]){
+                System.out.println("Monster caught you.");
+                break;
+            }
+
+            //Map
             for (int i = 0;i< map.length;i++){
                 for(int j = 0;j < map[i].length;j++){
                     System.out.print(map[i][j]);
@@ -40,6 +50,7 @@ public class Maze_BoundD12  {
                 System.out.println();
             }
 
+            //Player
             System.out.println("Start moving (w/a/s/d): ");
             String input = sc.nextLine();
 
@@ -66,8 +77,41 @@ public class Maze_BoundD12  {
             }
 
             map[playerRow][playerCol] = 'P';
+
+            if(map[playerRow][playerCol] == 'G'){
+                System.out.println("Yes!! You reach the end.");
+            }
+            // Monster
+
+            map[monsterRow][monsterCol] = monsterOld;
+
+            int mr = r.nextInt(4); // mr means monsterRandom
+
+            int newMonsterRow = monsterRow;
+            int newMonsterCol = monsterCol;
+
+            if (mr == 0) newMonsterRow--;
+            else if (mr == 1) newMonsterRow++;
+            else if (mr == 2) newMonsterCol--;
+            else if (mr == 3) newMonsterCol++;
+
+            if (map[newMonsterRow][newMonsterCol] != '#') {
+
+                if (newMonsterRow == playerRow && newMonsterCol == playerCol) {
+                    System.out.println("Monster caught you.");
+                    break;
+                }
+
+                monsterOld = map[newMonsterRow][newMonsterCol];
+
+                monsterRow = newMonsterRow;
+                monsterCol = newMonsterCol;
+            }
+
+            map[monsterRow][monsterCol] = 'M';
+        }
         }
         }
 
-    }
+
 
