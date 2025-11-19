@@ -31,3 +31,7 @@ To write one Java project every day for two weeks, covering topics like:
 | Day 13 | Maze_Game - Final VersionD13 | Continued development and final version of the Maze Game with smarter monster logic. | Completed after final tweaks. |
 | Day 14 | Signal_AnalyzerD14 |Developed a signal processing tool in Java. Implemented array manipulation to filter signal noise and designed a recursive algorithm to identify the peak value within the dataset. |
 
+
+## And That's a Wrap!
+
+What an amazing journey these last 14 days have been! I went from learning basic syntax to writing my own recursive algorithms and solving real logic problems. Seeing my code actually work gives me the best feeling ever and doing half of them in my midterm was... haha a bit tiring. This project was a huge for me tho its just small projects for java. This is just the beginning of my software engineering path...
