@@ -3,7 +3,7 @@ package Week_2;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Maze_BoundD12  {
+public class Maze_BoundD12andD13  {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random r = new Random();
@@ -28,10 +28,10 @@ public class Maze_BoundD12  {
         char[][] map = {
                 {'#','#','#','#','#','#','#','#','#','#','#','#','#'},
                 {'#','P',' ',' ',' ',' ',' ',' ','#',' ',' ','M','#'},
-                {'#',' ','#','#','#',' ','#',' ','#',' ','#',' ','#'},
-                {'#',' ','#',' ',' ',' ','#',' ',' ',' ','#',' ','#'},
-                {'#',' ','#',' ','#','#','#',' ','#','#','#',' ','#'},
-                {'#',' ',' ',' ',' ',' ','#',' ','#',' ',' ',' ','#'},
+                {'#',' ','#','#','#',' ','#',' ','#',' ',' ',' ','#'},
+                {'#',' ','#',' ',' ',' ','#',' ',' ',' ',' ',' ','#'},
+                {'#',' ','#',' ','#',' ',' ',' ','#','#',' ',' ','#'},
+                {'#',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','#'},
                 {'#',' ','#','#','#',' ',' ',' ','#',' ','#','G','#'},
                 {'#',' ',' ',' ',' ',' ','#',' ',' ',' ',' ',' ','#'},
                 {'#','#','#','#','#','#','#','#','#','#','#','#','#'}
@@ -42,7 +42,6 @@ public class Maze_BoundD12  {
                 break;
             }
 
-            //Map
             for (int i = 0;i< map.length;i++){
                 for(int j = 0;j < map[i].length;j++){
                     System.out.print(map[i][j]);
@@ -50,7 +49,6 @@ public class Maze_BoundD12  {
                 System.out.println();
             }
 
-            //Player
             System.out.println("Start moving (w/a/s/d): ");
             String input = sc.nextLine();
 
@@ -76,42 +74,37 @@ public class Maze_BoundD12  {
                 System.out.println("Invalid input");
             }
 
-            map[playerRow][playerCol] = 'P';
-
             if(map[playerRow][playerCol] == 'G'){
                 System.out.println("Yes!! You reach the end.");
+                live = false;
+                break;
             }
-            // Monster
+            map[playerRow][playerCol] = 'P';
 
             map[monsterRow][monsterCol] = monsterOld;
-
-            int mr = r.nextInt(4); // mr means monsterRandom
 
             int newMonsterRow = monsterRow;
             int newMonsterCol = monsterCol;
 
-            if (mr == 0) newMonsterRow--;
-            else if (mr == 1) newMonsterRow++;
-            else if (mr == 2) newMonsterCol--;
-            else if (mr == 3) newMonsterCol++;
+            int dRow = playerRow - monsterRow;
+            int dCol = playerCol - monsterCol;
 
-            if (map[newMonsterRow][newMonsterCol] != '#') {
+            if(dRow > 0 && map[monsterRow+1][monsterCol] != '#') newMonsterRow++;
+            else if(dRow < 0 && map[monsterRow-1][monsterCol] != '#') newMonsterRow--;
+            else if(dCol > 0 && map[monsterRow][monsterCol+1] != '#') newMonsterCol++;
+            else if(dCol < 0 && map[monsterRow][monsterCol-1] != '#') newMonsterCol--;
 
-                if (newMonsterRow == playerRow && newMonsterCol == playerCol) {
-                    System.out.println("Monster caught you.");
-                    break;
-                }
-
-                monsterOld = map[newMonsterRow][newMonsterCol];
-
-                monsterRow = newMonsterRow;
-                monsterCol = newMonsterCol;
+            if(newMonsterRow == playerRow && newMonsterCol == playerCol) {
+                System.out.println("Monster caught you.");
+                break;
             }
+
+            monsterOld = map[newMonsterRow][newMonsterCol];
+
+            monsterRow = newMonsterRow;
+            monsterCol = newMonsterCol;
 
             map[monsterRow][monsterCol] = 'M';
         }
-        }
-        }
-
-
-
+    }
+}
