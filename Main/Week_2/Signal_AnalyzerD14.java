@@ -5,6 +5,14 @@ import java.util.Arrays;
 
 public class Signal_AnalyzerD14 {
 
+    public static void negativeRemover(int[] n) {
+        for (int i = 0; i < n.length; i++) {
+            if (n[i] < 0) {
+                n[i] = 0;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Random r = new Random();
         int[] arr = new int[10];
@@ -15,5 +23,10 @@ public class Signal_AnalyzerD14 {
             System.out.print(arr[i] + " ");
         }
         System.out.println("\n");
+
+        negativeRemover(arr);
+
+        // Temporary check to see if it works
+        System.out.println("Signal cleaned.");
     }
 }
