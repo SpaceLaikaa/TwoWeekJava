@@ -13,6 +13,33 @@ public class Signal_AnalyzerD14 {
         }
     }
 
+    public static int maxFinder(int[] m, int index, int currentmax) {
+        if (index == m.length) {
+            return currentmax;
+        }
+
+        if (m[index] > currentmax) {
+            currentmax = m[index];
+        }
+
+        return maxFinder(m, index + 1, currentmax);
+    }
+
+    public static void printStats(int[] cleanedArr, int maxVal) {
+        System.out.println("------------------------------------------------");
+        System.out.println("ANALYSIS RESULTS:");
+
+        System.out.print("Cleaned Signal: [");
+        for (int i = 0; i < cleanedArr.length; i++) {
+            System.out.print(cleanedArr[i]);
+            if (i < cleanedArr.length - 1) System.out.print(", ");
+        }
+        System.out.println("]");
+
+        System.out.println("Max Value in Signal: " + maxVal);
+        System.out.println("------------------------------------------------");
+    }
+
     public static void main(String[] args) {
         Random r = new Random();
         int[] arr = new int[10];
@@ -26,7 +53,8 @@ public class Signal_AnalyzerD14 {
 
         negativeRemover(arr);
 
-        // Temporary check to see if it works
-        System.out.println("Signal cleaned.");
+        int maxVal = maxFinder(arr, 1, arr[0]);
+
+        printStats(arr, maxVal);
     }
 }
