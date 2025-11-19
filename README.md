@@ -29,5 +29,5 @@ To write one Java project every day for two weeks, covering topics like:
 | Day 11 | Mind_TestD11 | A 10-question personality analyzer that scores risky vs. stable decision-making patterns                                          |// I think my project are starting to get
 | Day 12 | Maze Game - Player vs Monster | Implemented a maze game where the player moves with w/a/s/d and the monster chases the player. Win by reaching 'G', lose if caught by monster. Midterm week made it a bit harder.| 
 | Day 13 | Maze Game - Final Version    | Continued development and final version of the Maze Game with smarter monster logic. | Completed after final tweaks. |
-| Day 14 | Last day coming soon... |
+| Day 14 | Developed a signal processing tool in Java. Implemented array manipulation to filter signal noise and designed a recursive algorithm to identify the peak value within the dataset. |
 
