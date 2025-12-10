@@ -27,7 +27,11 @@ To write one Java project every day for two weeks, covering topics like:
 | Day 9 | Array_RotatorD9 | Generates a random integer array of length 10–20, rotates all elements to the right by one, and displays both original and rotated arrays |
 | Day 10 | Mini_Bank_AppD10 | Built a simple banking system with deposit, withdraw, balance check and exit options using loops, Scanner and switch-case. |
 | Day 11 | Mind_TestD11 | A 10-question personality analyzer that scores risky vs. stable decision-making patterns                                          |// I think my project are starting to get
-| Day 12 | Maze Game - Player vs Monster | Implemented a maze game where the player moves with w/a/s/d and the monster chases the player. Win by reaching 'G', lose if caught by monster. Midterm week made it a bit harder.| 
-| Day 13 | Maze Game - Final Version    | Continued development and final version of the Maze Game with smarter monster logic. | Completed after final tweaks. |
-| Day 14 | Last day coming soon... |
+| Day 12 | Maze_Game - Player vs MonsterD12 | Implemented a maze game where the player moves with w/a/s/d and the monster chases the player. Win by reaching 'G', lose if caught by monster. Midterm week made it a bit harder.| 
+| Day 13 | Maze_Game - Final VersionD13 | Continued development and final version of the Maze Game with smarter monster logic. | Completed after final tweaks. |
+| Day 14 | Signal_AnalyzerD14 |Developed a signal processing tool in Java. Implemented array manipulation to filter signal noise and designed a recursive algorithm to identify the peak value within the dataset. |
 
+
+## And That's a Wrap!
+
+What an amazing journey these last 14 days have been! I went from learning basic syntax to writing my own recursive algorithms and solving real logic problems. Seeing my code actually work gives me the best feeling ever and doing half of them in my midterm was... haha a bit tiring. This project was a huge for me tho its just small projects for java. This is just the beginning of my software engineering path...
